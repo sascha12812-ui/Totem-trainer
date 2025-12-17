@@ -1,6 +1,36 @@
 body {
-  background: #0f0f0f;
-  color: white;
+  background: #0e0e0e;
+  color: #ffffff;
   font-family: Arial, sans-serif;
   text-align: center;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #1f1f1f;
+  color: white;
+  border: 2px solid #444;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background: #333;
+}
+
+#status {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#time {
+  font-size: 18px;
+  color: #00ff88;
 }
