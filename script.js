@@ -28,3 +28,17 @@ document.addEventListener("keydown", () => {
   document.getElementById("status").innerText = "Training beendet";
   active = false;
 });
+
+document.getElementById("bind").onclick = () => {
+  waitingForKey = true;
+  document.getElementById("bindKey").innerText = "Drücke eine Taste...";
+};
+
+document.addEventListener("keydown", (e) => {
+  if (waitingForKey) {
+    totemKey = e.key;
+    waitingForKey = false;
+    document.getElementById("bindKey").innerText =
+      "Totem-Taste: " + totemKey;
+  }
+});
