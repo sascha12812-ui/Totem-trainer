@@ -1,3 +1,6 @@
+let totemKey = null;
+let waitingForKey = false;
+
 let startTime;
 let active = false;
 
