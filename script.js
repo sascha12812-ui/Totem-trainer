@@ -19,7 +19,8 @@ document.getElementById("start").onclick = () => {
 };
 
 document.addEventListener("keydown", () => {
-  if (!active) return;
+if (!active || e.key !== totemKey) return;
+
 
   const reaction = Date.now() - startTime;
   document.getElementById("time").innerText =
