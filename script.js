@@ -1,3 +1,8 @@
+if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+  document.body.innerHTML =
+    "<h2>❌ Diese Website ist nur für PC gedacht</h2>";
+}
+
 let totemKey = null;
 let waitingForKey = false;
 
